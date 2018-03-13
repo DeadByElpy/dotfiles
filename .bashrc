@@ -17,6 +17,9 @@ HISTCONTROL=ignoreboth
 HISTSIZE=50000
 HISTFILESIZE=50000
 
+# increase maximum number of open file descriptors
+ulimit -n 10480
+
 # builtin time command output format
 export TIMEFORMAT=$'\e[0;30m\e[47mreal:%Rs user:%Us sys:%Ss cpu:%P%%\e[0m'
 
